@@ -1,38 +1,80 @@
+:root {
+  --primary-color: #4a90e2;   /* A light blue for a calming effect */
+  --secondary-color: #3498db; /* A slightly darker blue for contrast */
+  --accent-color: #95a5a6;    /* A muted grayish-blue for accents */
+  --background-color: #ecf0f1; /* A light gray background */
+  --text-color: #333;         /* A dark gray for text */
+}
+
+html {
+  background-color: var(--background-color);
+  font-family: 'Cormorant Garamond', serif;
+}
+
 .App {
   text-align: center;
+  margin: 0 auto;
+  margin-top: 20%;
+  width: 500px;
+  height: 500px;
+  color: var(--text-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: var(--primary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 12px;
+  color: var(--primary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.setters {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.setter-box {
+  width: 45%;
+  height: 80px;
+  background-color: var(--accent-color);
+  margin: 5px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 20px;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.countdown {
+  height: 200px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#time-left {
+  font-size: 90px;
 }

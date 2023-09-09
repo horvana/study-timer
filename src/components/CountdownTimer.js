@@ -1,9 +1,12 @@
 export default function CountdownTimer() {
+    const currItem = 'Session'
+    const timeLeft = '25:00'
+
     return (
     <div className="countdown">
         <div id="timer">
-            <label htmlFor="" id="timer-label">Session Countdown</label>
-            <div id="time-left">25:00</div>
+            <label htmlFor="" id="timer-label">{currItem}</label>
+            <div id="time-left">{timeLeft}</div>
         </div>
 
         <div className="controls">

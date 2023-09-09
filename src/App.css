@@ -14,7 +14,7 @@ html {
 .App {
   text-align: center;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 10%;
   width: 500px;
   height: 500px;
   color: var(--text-color);
@@ -77,4 +77,10 @@ button {
 
 #time-left {
   font-size: 90px;
+}
+
+@media (max-width: 500px) {
+  .App {
+    width: 250px;
+  }
 }
